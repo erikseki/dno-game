@@ -1,0 +1,84 @@
+* {
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+#game {
+    width: 500px;
+    height: 200px;
+    border: 1px solid white;
+    background-color: rgb(58, 58, 58);
+    margin: 0 auto;
+}
+
+#fdo {
+    width: 500px;
+    height: 200px;
+    margin: 0 auto;
+    position: absolute;
+    opacity: 0.8;
+}
+
+#character {
+    width: 57px;
+    height: 60px;
+    color: black;
+    position: relative;
+    top: 143px;
+}
+
+.animate {
+    animation: 500ms jump;
+}
+
+@keyframes jump {
+    0% {
+        top: 150px;
+    }
+    30% {
+        top: 100px;
+    }
+    70% {
+        top: 100px;
+    }
+    100% {
+        top: 150px;
+    }
+}
+
+#box {
+    width: 49px;
+    height: 45px;
+    left: 386px;
+    top: 143px;
+    animation: 2s box infinite linear;
+    position: relative;
+}
+
+@keyframes box {
+    0% {
+        left: 385px;
+    }
+    100% {
+        left: -70px;
+    }
+}
+
+#cloud {
+    position: absolute;
+    width: 94px;
+    height: 46px;
+    top: 1.4rem;
+    left: 25rem;
+    animation: 6s clouding infinite linear;
+}
+
+@keyframes clouding {
+    0% {
+        left: 400px;
+    }
+    100% {
+        left: -15px;
+    }
+}
